@@ -8,7 +8,7 @@ SECRET_KEY = config('SECRET_KEY')
 
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['45.77.105.55', 'freeomi.com', 'www.freeomi.com']
+ALLOWED_HOSTS = ['45.77.105.55', 'freeomi.com', 'www.freeomi.com', '127.0.0.1']
 
 
 # Application definition
@@ -69,14 +69,25 @@ WSGI_APPLICATION = 'freebitcoin.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': config("DB_NAME"),
+#         'USER': config("DB_USER"),
+#         'PASSWORD': config("DB_PASSWORD"),
+#         'HOST': 'localhost',
+#         'PORT': '',
+#     }
+# }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': config("DB_NAME"),
-        'USER': config("DB_USER"),
-        'PASSWORD': config("DB_PASSWORD"),
         'HOST': 'localhost',
-        'PORT': '',
+        'NAME': 'freebit',
+        'USER': 'postgres',
+        'PASSWORD': '12345678',
+        'port': '5432'
     }
 }
 
