@@ -113,26 +113,23 @@ body > main > section > section.top > div > div > div.slogan > p{
     transform: scale(4);
     transform-origin: center;
 }
-.home .feature-wrapper .feature:hover {
-    color: white !important;
-    background-color: var(--dark) !important;
-    transform: translateY(-10px);
-    transition: .1s !important;
-}
+/*
+.home .feature-wrapper .feature:hover { color: white !important; background-color: var(--dark) !important; transform: translateY(-10px); transition: .1s !important; }
+
 .home .feature-wrapper .feature:hover .feature-icon{
     color: #fff;
-}
+}*/
 
 .home .feature .header,
 .home .feature .text {
     color: var(--bs-dark);
     transition: .3s;
 }
-
+/*
 .home .feature-wrapper .feature:hover .header,
 .home .feature-wrapper .feature:hover .text {
     color: #fff;
-}
+}*/
 
 
 .navbar-light .navbar-brand, .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
